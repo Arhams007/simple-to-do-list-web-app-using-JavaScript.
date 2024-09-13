@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background: linear-gradient(135deg, #15b1a9, #e53935);
+    padding: 30px 40px;
+    color: white;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#myInput {
+    margin: 0;
+    border: none;
+    width: 70%;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: width 0.3s ease;
+}
+
+#myInput:focus {
+    width: 75%;
+}
+
+.addBtn {
+    padding: 15px;
+    width: 30%;
+    background: #d9d9d9;
+    color: #555;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+    border: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.addBtn:hover {
+    background: #bdbdbd;
+    color: #333;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    max-width: 500px;
+    margin: 20px auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+ul li {
+    cursor: pointer;
+    padding: 15px 20px 15px 50px;
+    background: #15b1a9;
+    font-size: 18px;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+ul li:hover {
+    background: #f1f1f1;
+}
+
+ul li.checked {
+    background: #888;
+    color: #fff;
+    text-decoration: line-through;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+ul li:last-child {
+    border-bottom: none;
+}
